@@ -1,14 +1,39 @@
 <DOCTYPE html>
     <html>
 
+
     <head>
         <header>HAMBURGER</header>
     </head>
 
     <body>
-        <img src="hamburger.jpg"
-            height="300"
-            width="400" />
+        <section>
+            <ul style="position:absolute; top: 18%; left: 10%;"> 
+                <img class="bigimage" src="hamburger.jpg" />
+            </ul>
+        </section>
+
     </body>
+
+    <style>
+        header {
+            padding: 30px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            font-size: 60px;
+            height: 50px !important;
+            }
+        body {
+            background-color: grey;
+        }
+
+
+        .bigimage {
+            width: 1000px;
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
 
     </html>
