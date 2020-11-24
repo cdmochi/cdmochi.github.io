@@ -1,0 +1,63 @@
+table {
+    
+    border-spacing: 0px;
+    border-collapse: collapse;
+    border-style: solid;
+}
+
+.indent_50 {
+    padding-left: 50px;
+}
+
+
+.text_header{
+    margin-left: 30%;
+    font-weight: bold;
+    text-size-adjust: 18px;
+}
+
+.logo_align {
+    margin: 10px;
+    float: right;
+}
+
+.indent_24 {
+    padding-left: 14px;
+}
+
+
+td {
+    vertical-align: top;
+}
+
+.fTPadding{
+    margin-top: 26px;
+}
+
+
+#sub-total {
+    border-top: solid #000 1px;
+}
+
+#total-due {
+    border-bottom: solid #000 1px;
+}
+
+th {
+    background-color: #eeeeee;
+    color: navy;
+    border: solid #000 1px;
+}
+
+.data {
+    border-left: solid #000 1px;
+    border-right: solid #000 1px;
+}
+
+.r {
+    text-align: right;
+}
+
+.head-color{
+    font-weight: 600;
+}
