@@ -1,144 +1,164 @@
-<DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Sample Quotation</title>
-        <meta name="description" content="The HTML5 Herald">
-        <meta name="author" content="SitePoint">
-        <script src="scripts.js"></script>
+    <title>Sample Quotation</title>
+    <meta name="description" content="Company quotation">
+    <meta name="author" content="SitePoint">
 
-    </head>
-
-
-
-    <body >
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
 
+</head>
+<b>Your company name here
+    <span style="float:right;font-size:30px;">
+        QUOTATION
+    </span>
+</b>
 
-        <h1 >Assumption University</h1>
+<p>
+    Your company address line1 here
+    <br>Your company address line2 here
+    <span style="float:right;">
+        <img src="./img/quote-pic.jpg" style="width:100px;height:100px;">
+    </span>
+    <br>Your company address line3 here
 
-        <div class="logo_align">
-            <h1 style="text-align: center;">Assumption University</h1>
-            <img src="abac.png" />
-        </div>
-
-        <div style="float: top;">
-            <p>Your Company Address line1 here </p>
-            <p>Your Company Address line1 here </p>
-            <p>Your Company Address line1 here <br> </p>
-        </div>
-
-
-        <div style="margin-top: 40px;">
-            <p>Your Zip Code here </p>
-
-            <p>Phone: 1234567 <span class="indent_50"> Mobile: 1234567</span> </p>
-        </div>
-
-
-
-        <div>
-            <p style="font-weight: bold;">Page:No.2 <span class="text_header"> Currency:Dollar</span> <span
-                    class="text_header">NO: A000000</span></p>
-        </div>
-        <div>
-            <p>To: Sample Custom name <span style="margin-left: 29%;">Ship to: Sample Customer name 001</span></p>
-            <p style="margin-left: 2%;">Sample address line2<span style="margin-left: 30%;">Ship to: Sample Customer name 002</span></p>
-            <p style="margin-left: 2%;">Sample address line3<span style="margin-left: 30%;">Ship to: Sample Customer name 003</span></p>
-
-        </div>
-
-        
+</p>
+<br>
+<p>Your ZIP code here</p>
+<p id="bottom-line">
+    Phone: 12345678
+    <span class="tab">Mobile: 12345678</span>
+    <span style="float: right;">
+        2010/7/27
+    </span>
+</p>
 
 
 
-        <table class="fTPadding">
-            <thead>
-                <th>Salesperson</th>
-                <th>Your P.O. No.</th>
-                <th>Date Shipped</th>
-                <th>Shipped Via </th>
-                <th>F.O.B Point</th>
-                <th>Terms</th>
-            </thead>
+<p class="thick" style="text-align: center;">
+    Currency Dollar
+    <span class="tab">No.:A000000</span>
+    <span style="float:left;">
+        Page No. 2
+    </span>
+</p>
 
-            <tbody>
-                <tr>
-                    <td>Administrator</td>
-                    <td>Sample PO#</td>
-                    <td>2011/3/18</td>
-                    <td>Courreir Services</td>
-                    <td>U.S.A</td>
-                    <td>2 Weeks</td>
-                </tr>
+<p style="text-align: center;">
+    Ship to:
+    <span class="tab">Sample customer name 001</span>
+    <span class="tab"></span>
+    <span class="tab"></span>
+    <span class="tab"></span>
+    <span style="float:left;">
+        To:
+        <span class="tab">Sample customer name 001</span>
+    </span>
+</p>
+<p style="text-align: center;">
+    Ship to address line1
+    <span style="float:left;">
+        <span class="tab"></span>   Sample address line1</span>
 
-            </tbody>
+    <br>
+    Ship to address line2
+    <span style="float:left;">
+        <span class="tab"></span>   Sample address line2</span>
+
+    <br>
+    Ship to address line3
+    <span style="float:left;">
+        <span class="tab"></span>   Sample address line3</span>
+
+</p>
+<table class="center">
+    <thead>
+        <tr>
+            <th>Salesperson</th>
+            <th>Your P.O. No.</th>
+            <th>Date Shipped</th>
+            <th>Shipped Via</th>
+            <th>F.O.B Point</th>
+            <th>Terms</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="bottom-line">
+            <td class="data">Administrator</td>
+            <td class="data">Sample PO#</td>
+            <td class="data">2011/3/18</td>
+            <td class="data">Courier Services</td>
+            <td class="data">U.S.A</td>
+            <td class="data">2 Weeks</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<button id="tableBt">Add Item</button>
+<table class="center">
+    <thead>
+        <tr>
+            <th>Quantity</th>
+            <th>Description</th>
+            <th>Unit Price</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody id="dataTable">
+
+    </tbody>
+
+    <tfooter>
+
+        <tr id="sub-total">
+            <td colspan="3" class="data2 r colo"> Subtotal</td>
+            <td colspan="1" class="data2 r" id="bottom-line">
+                <span id="subTotal">4,300.00</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="data2 r colo"> Sales Tax</td>
+            <td colspan="1" class="data2 r" id="bottom-line">
+                <span id="saleTax">0<span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="data2 r colo"> Shipping &amp; Handling</td>
+            <td colspan="1" class="data2 r" id="bottom-line">
+                <span id="shippingCost">0</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="data2 r colo"> Total Due</td>
+            <td colspan="1" class="data2 r" id="bottom-line">
+                <span id="totalDue">0</span>
+            </td>
+        </tr>
+    </tfooter>
+</table>
+
+<br>
+
+<p class="cen">
+    <b>Make all checks payable to:</b>
+    <br><i>Your company name here</i>
+    <br><b>If you have any question concerning this invoices, call:</b>
+    <br>
+    <br><b>THANK YOU FOR YOUR BUSINESS</b>
+</p>
 
 
-        </table>
+<footer>Chayapam Suesawatwanich</footer>
 
+</body>
 
-        <table>
-            <thead>
-                <th>Quantity</th>
-                <th>Description</th>
-                <th>Unit Price</th>
-                <th>Amount</th>
-
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td class="r">1.5</td>
-                    <td Stock Item Example 0001</d>
-                    <td Stock Item Example 0001</td>
-                    <td 1000</td>
-                </tr>
-                <tr>
-                    <td class="r">1</td>
-                    <td>Stock Item Example 0002</td>
-                    <td class="r">2000</td>
-                    <td class="r">2000</td>
-                </tr>
-                <tr>
-                    <td class="r">1</td>
-                    <td>Service Charge Invoicing Item </td>
-                    <td class="r">100</td>
-                    <td class="r">100</td>
-                </tr>
-                <tr>
-                    <td class="r">1</td>
-                    <td Service Charge Invoicing Item <br />
-                    Additional line 1 for this item<br />
-                    Additional line 2 for this item
-                    </td>
-                    <td class="r">200</td>
-                    <td class="r">200</td>
-                </tr>
-                <tr>
-                    <td colspan="3" class="r"> Subtotal</td>
-                    <td colspan="3" class="r"> 4300 </td>
-                </tr>
-                <tr>
-                    <td colspan=3 class="r"> Sales Tax</td>
-                    <td colspan="3" class="r"> 4300 </td>
-                </tr>
-                <tr>
-                    <td colspan=3 class="r"> Shipping &amp; Handling</td>
-                    <td colspan=3 class="r"> 4300 </td>
-                </tr>
-                <tr>
-                    <td colspan=3 class="r"> Subtotal</td>
-                    <td colspan=3 class="r"> 4300 </td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </body>
-
-    </html>
+</html>
