@@ -1,0 +1,24 @@
+#head-top {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#head-toptext {
+    color: rgba(0, 0, 0, 0.541);
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+#head-subtext {
+    color: #3DDC84;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#android_img {
+    margin-top: 140px;
+    margin-left: 100px;
+}
+
+
+
