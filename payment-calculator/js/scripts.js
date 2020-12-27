@@ -42,7 +42,7 @@ $(document).ready(function () {
     })
 
     $('#buy-bt').click(function () {
-        alert('Done');
+        alert('The Transaction Has been completed!');
         location.reload();
     })
 
